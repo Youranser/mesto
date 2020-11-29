@@ -1,0 +1,28 @@
+.popup__submit-button {
+    background-image: url(../../../images/сlose-Icon.svg);
+    background-size: 40px;
+    background-position: center;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    cursor: pointer;
+    z-index: -1;
+    border: none;
+}
+
+.popup__submit-button:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 540px) {
+    .popup__submit-button {
+        width: 26px;
+        height: 26px;
+        top: -50px;
+        right: 0;
+    }
+}

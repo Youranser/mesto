@@ -1,0 +1,24 @@
+.profile__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 660px) {
+    .profile__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile__title {
+        font-size: 27px;
+    }
+}
