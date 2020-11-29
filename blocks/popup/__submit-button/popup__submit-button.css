@@ -1,14 +1,13 @@
 .popup__submit-button {
     background-image: url(../../../images/сlose-Icon.svg);
-    background-size: 40px;
+    background-size: 58px;
     background-position: center;
-    object-fit: cover;
     width: 40px;
     height: 40px;
     background-color: #000;
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -40px;
+    right: -40px;
     cursor: pointer;
     z-index: -1;
     border: none;
