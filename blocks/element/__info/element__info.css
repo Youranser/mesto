@@ -1,6 +1,5 @@
 .element__info {
-    width: 246px;
-    height: 23px;
+    max-width: 246px;
     margin: 25px 0 0 21px;
     display: flex;
     flex-direction: row;
