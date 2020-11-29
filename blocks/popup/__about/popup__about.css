@@ -7,9 +7,3 @@
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
-
-@media screen and (max-width: 540px) {
-    .popup__about {
-        width: 238px;
-    }
-}
