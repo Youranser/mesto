@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
     .elements {
         max-width: 582px;
     }
