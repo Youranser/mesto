@@ -8,7 +8,7 @@ let popupAbout = document.querySelector('.popup__input-area_about');
 let formElement = document.querySelector('.popup__elements');
 
 function openPopup() {
-    popup.classList.remove('popup__condition_closed');
+    popup.classList.remove('popup_closed');
     popupName.value = formName.textContent;
     popupAbout.value = formAbout.textContent;
 };
@@ -16,7 +16,7 @@ function openPopup() {
 addButton.addEventListener('click', openPopup);
 
 function closePopup() {
-    popup.classList.add('popup__condition_closed');
+    popup.classList.add('popup_closed');
 };
 
 resetButton.addEventListener('click', closePopup);
