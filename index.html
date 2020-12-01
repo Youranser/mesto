@@ -26,7 +26,7 @@
         <button aria-label="Plus" type="button" class="profile__add-button"></button>
       </section>
 
-      <article class="elements">
+      <section class="elements">
         <article class="element">
           <img src="./images/karachaevsk.jpg" class="element__image" alt="Карачаевск">
           <div class="element__info">
@@ -69,20 +69,20 @@
             <button aria-label="Like" type="button" class="element__like"></button>
           </div>
         </article>
-      </article>
+      </section>
     </main>
 
     <footer class="footer">
       <p class="footer__copyright">&copy; 2020. Mesto Russia</p>
     </footer>
 
-    <form name="popup" class="popup popup_closed">
+    <form name="popup" class="popup">
       <fieldset class="popup__elements">
         <button type="button" class="popup__submit-button"></button>
         <div class="popup__container">
           <h3 class= "popup__title">Редактировать профиль</h3>
-          <input name="name" type="text" class="popup__input-area popup__input-area_name" placeholder="Имя">
-          <input name="about" type="text" class="popup__input-area popup__input-area_about" placeholder="О себе">
+          <input name="name" type="text" class="input-area popup__input-area_name" placeholder="Имя">
+          <input name="about" type="text" class="input-area popup__input-area_about" placeholder="О себе">
           <button type="submit" class="popup__save">Сохранить</button>
         </div>
       </fieldset>

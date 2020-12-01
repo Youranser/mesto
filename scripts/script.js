@@ -8,23 +8,24 @@ let popupAbout = document.querySelector('.popup__input-area_about');
 let formElement = document.querySelector('.popup__elements');
 
 function openPopup() {
-    popup.classList.remove('popup_closed');
+    popup.classList.add('popup_opened');
     popupName.value = formName.textContent;
     popupAbout.value = formAbout.textContent;
 };
 
-addButton.addEventListener('click', openPopup);
-
 function closePopup() {
-    popup.classList.add('popup_closed');
+    popup.classList.remove('popup_opened');
 };
-
-resetButton.addEventListener('click', closePopup);
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
     formName.textContent = popupName.value;
     formAbout.textContent = popupAbout.value;
+    closePopup();
 }
 
+addButton.addEventListener('click', openPopup);
+resetButton.addEventListener('click', closePopup);
+// не совсем понимаю: formElement - это форма, formSubmitHandler - обработчик,
+// получается он и так висит на форме, разве нет?
 formElement.addEventListener('submit', formSubmitHandler); 
