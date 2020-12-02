@@ -3,9 +3,8 @@ let addButton = document.querySelector('.profile__edit-button');
 let resetButton = document.querySelector('.popup__submit-button');
 let formName = document.querySelector('.profile__title');
 let formAbout = document.querySelector('.profile__subtitle');
-let popupName = document.querySelector('.popup__name');
-let popupAbout = document.querySelector('.popup__about');
-let formElement = document.querySelector('.popup__elements');
+let popupName = document.querySelector('.popup__area_input_name');
+let popupAbout = document.querySelector('.popup__area_input_about');
 
 function openPopup() {
     popup.classList.add('popup_opened');
@@ -26,6 +25,4 @@ function formSubmitHandler (evt) {
 
 addButton.addEventListener('click', openPopup);
 resetButton.addEventListener('click', closePopup);
-// не совсем понимаю: formElement - это форма, formSubmitHandler - обработчик,
-// получается он и так висит на форме, разве нет?
-formElement.addEventListener('submit', formSubmitHandler); 
+popup.addEventListener('submit', formSubmitHandler); 
