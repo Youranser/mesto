@@ -15,4 +15,4 @@
 Впервые был задействован язык JavaScript - написанная логика позволяет редактировать
 информацию страницы во всплывающем pop-up.
 
-* [Ссылка на GH Pages](https://github.com/Youranser/mesto)
+* [Ссылка на GH Pages](https://youranser.github.io/mesto/)
